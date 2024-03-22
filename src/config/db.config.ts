@@ -3,10 +3,10 @@ import { TypeOrmModuleOptions} from '@nestjs/typeorm'
 
 export const getProgressConfig = async (config: ConfigService): Promise<TypeOrmModuleOptions> =>({
     type: 'postgres',
-    host: 'dpg-chutd15269vccp1j3pjg-a.frankfurt-postgres.render.com',
-    username: 'wish_list_user',
-    password: 'YcFBeXq53oxQ44UFVWhM0hlHAoLMz2ZB',
-    database: 'wish_list',
+    host: 'localhost',
+    username: 'wishlist',
+    password: 'Ilovebass72',
+    database: 'wishlist',
     port: 5432,
     entities: [__dirname + '/../**/*.entity.{js,ts}'],
     synchronize: true,
