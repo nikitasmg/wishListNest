@@ -4,9 +4,9 @@ import { TypeOrmModuleOptions} from '@nestjs/typeorm'
 export const getProgressConfig = async (config: ConfigService): Promise<TypeOrmModuleOptions> =>({
     type: 'postgres',
     host: '127.0.0.1',
-    username: 'wishlist',
-    password: 'wishlist',
-    database: 'wishlist',
+    username: 'postgres',
+    password: 'postgres',
+    database: 'postgres',
     port: 5432,
     entities: [__dirname + '/../**/*.entity.{js,ts}'],
     synchronize: true,
