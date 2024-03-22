@@ -11,5 +11,5 @@ export const getProgressConfig = async (config: ConfigService): Promise<TypeOrmM
     entities: [__dirname + '/../**/*.entity.{js,ts}'],
     synchronize: true,
     logging: true,
-    ssl:true,
+    ssl:false,
 })
